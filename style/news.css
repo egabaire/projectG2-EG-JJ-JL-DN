@@ -1,0 +1,149 @@
+#content
+{
+  
+    margin:0 auto;
+    width:50%;
+    display:grid;
+    grid-template-columns:100%;
+    justify-content:center;
+    grid-gap:2rem;
+    grid-auto-rows:minmax(100px,auto);
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+
+#content >div
+{
+    transition: 0.3s;
+}
+
+.first
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    display:grid;
+    grid-template-columns: 29% 69%;
+    grid-gap:1em;
+}
+
+
+.left
+{
+    display:grid;
+    grid-template-rows: auto auto;
+    background-color:white;
+}
+
+.image >img
+{
+    max-height:100%;
+    max-width:100%;
+    display:block;
+}
+
+
+.right
+{
+    display:grid;
+    justify-content: start;
+}
+
+
+.date
+{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    grid-gap:1rem;
+    align-items: center;
+}
+
+.like
+{
+    display:grid;
+    align-items: center;
+    justify-content: start;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: column;
+    padding-left:2%;
+}
+
+.styleLikeButton
+{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow:column;
+    outline:none;
+
+
+}
+
+.styleLikeButton button[type=button]
+{
+    border:none;
+    outline:none;
+    background-color:white;
+    cursor: pointer;
+}
+
+#thumb:hover
+{
+    color:red;
+}
+
+.glyphicon glyphicon-cloud
+{
+    color:red;
+}
+
+.second
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height:90%;
+    
+}
+
+#comments
+{
+    width:100%;
+    border:none;
+    padding:1rem;
+    resize:none;
+}
+
+.second input[type=button]
+{
+    width:100%;
+    padding:1rem;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.third
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    word-wrap: break-word;
+    padding:1rem;
+    overflow:wrap;
+    overflow:hidden;
+}
+
+#display_comments
+{
+    display:grid;
+    grid-gap:2rem;
+}
+
+@media screen and (max-width:800px)
+{
+  
+    .first
+    {
+        grid-template-columns: 100%;
+        padding:10px;
+    }
+
+  
+}
+
+

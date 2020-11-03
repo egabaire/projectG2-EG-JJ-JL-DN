@@ -1,0 +1,66 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows:minmax(100px,auto);
+    justify-items: center;
+    color: white;
+    grid-gap: 2em;
+
+}
+.signUpForm{
+    margin-top: -1em;
+    justify-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.signUpForm, form{
+    display: grid;
+
+}
+label{
+    
+    grid-column: 1/2;
+}
+
+input,button{
+    grid-column: 2/3;
+    padding: 5px;
+}
+.container>div{
+    background-color: #232323;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 7px solid white ;
+   
+    
+}
+
+body{
+    background-color:#232323;
+   
+}
+.logo{
+    justify-self: start;
+    width: fit-content;
+    height: fit-content;
+}
+.logo>img{
+    height:150px;
+}
+.title{
+    margin-top: -6em;
+    justify-self:center;
+    width: fit-content;
+    height: fit-content;
+}
+@media only screen and (max-width: 600px) {
+    .logo>img{
+        height: 65px;
+        left: 0;
+        top: 0;
+    } 
+
+  }

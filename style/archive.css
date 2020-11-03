@@ -1,0 +1,24 @@
+#container
+{
+	display:grid;
+	grid-gap:1em;
+	grid-template-columns: 50% 50%;
+	background-color:#2b2b2b; 
+	margin-top: 6%;
+	
+	
+}
+
+h1{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background-color:#2b2b2b; 
+}
+a{
+    font-size:x-large;
+    color:white
+   
+}

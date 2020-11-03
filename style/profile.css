@@ -1,0 +1,194 @@
+
+#profile-container {
+	display:grid;
+	grid-template-rows: 60% 40%;
+	text-align:center;
+}
+
+#profile {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius:1em 1em 0em 0em;
+}
+
+#profile-panel{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	display:grid;
+	border-radius:0em 0em 2em 2em;
+}
+
+#profile-panel > button {
+	background-color:#2b2b2b;
+	color:#f8f8ff;
+	font-size:1em;
+	transition-duration:0.3s;
+	cursor:pointer;
+	text-align:left;
+}
+
+.delete_confirmation 
+{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	text-align:center;
+	margin: 0 auto;
+	margin-top:35%;
+	width:50%;
+	height:auto;
+}
+
+.form
+{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-auto-flow:column;
+}
+
+.form button
+{
+	width:100%;
+	font-size:1.2vw;
+}
+
+#deleteConfirm{
+	background-color:rgba(242, 38, 38,0.5);
+}
+
+
+#profile-panel > button:hover, .active{
+	background-color:#f8f8ff;
+	color:black;
+	border-bottom: 0.3em solid #fe0000;
+}
+#profile-panel > button:last-child{
+	border-radius:0em 0em 1em 1em;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#activitiesContainer{
+
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	overflow:auto;
+}
+
+.profileInformation{
+	padding: 0.5em;
+	margin-bottom:1em;
+	border-radius: 0.4em;
+	overflow-wrap: break-word;
+}
+#yourLatestLikes{
+	background-color:rgba(31, 219, 141, 0.2);
+}
+
+#yourLatestComments{
+	background-color:rgba(31, 175, 219, 0.2);
+}
+
+#yourLatestPosts{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#activitiesContainer > div{
+	padding:20px;
+	
+}
+
+#grid-container
+{
+	margin:0 auto;
+	width:60%;
+	margin-top:2%;
+	margin-bottom: 2%;
+	display:grid;
+	grid-column-gap: 1%;
+	grid-template-columns: 24% 74%;
+	height:40em;
+}
+
+
+@media screen and (max-width: 480px){
+	#grid-container{ grid-template-columns: 100%; overflow:auto; overflow-x:hidden; width:100%;}
+	#profile {width:100%;box-sizing:border-box;padding-bottom:2em; border-radius:0em 0em 0em 0em;}
+	#profile-panel >button:last-child{border-radius:0em 0em 0em 0em;}
+	#profile-panel {
+		grid-template-columns: 33% 33% 33%;	
+		position:fixed;
+		bottom:0;
+		width:100%;
+	}
+	#profile-panel > button > img{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:0.2em;
+		margin-top:0.2em;
+	}
+	#profile-container{
+		grid-template-rows: 90% 10%;
+	}
+	#activitiesContainer{
+		height:100%;
+		overflow:visible;
+		width:100%;
+	}
+	#deleteUserBtn{
+		grid-column: 1/4;
+	}
+	.followBtn{
+		margin-top:0em;
+		margin-bottom: 15%;
+	}
+	.btnText{
+		display:none;
+	}
+	.form{
+		grid-template-columns: 100%;
+		grid-template-rows:50% 50%;
+	}
+	.form button{
+		font-size:7vw;
+	}
+
+}
+
+#grid-container > div{
+	
+}
+
+#circle{
+	height: 12em;
+	width: 12em;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5%;
+	background-position: 50% 50%;
+	background-repeat:no-repeat;
+}
+
+#circle > img{
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+
+.followBtn {
+	background-color: red;
+	font-size: 1.6em;
+	padding:0.2em 1em 0.2em 1em;
+	margin-top:5%;
+	color:#f8f8ff;
+	border-color:none;
+	cursor:pointer;
+	transition-duration: 0.4s;
+}
+
+.followBtn:hover{
+	background-color:#f8f8ff;
+	color:black;
+}
+
+.icon{
+	margin-left:8%;
+}
+

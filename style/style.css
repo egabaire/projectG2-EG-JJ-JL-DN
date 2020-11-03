@@ -1,0 +1,50 @@
+.container{
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns:repeat(1,.5fr);
+    grid-gap: 1em;
+    justify-items: center;
+    justify-content:center;
+    grid-auto-rows: minmax(100px,auto);
+    color: white;
+}
+
+h1
+{
+    text-align:center;
+    color:black;
+}
+
+.container > div
+{
+  
+    padding:1em;
+}
+
+
+ .info
+ {
+    color:black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr 2fr);
+    grid-gap: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.icon{
+    grid-column: 1/2;
+} 
+ .text1{
+    grid-column: 2/7;
+}  
+
+.header{
+    justify-self: center;
+}
+.icon>img{
+    height: 110px;
+}

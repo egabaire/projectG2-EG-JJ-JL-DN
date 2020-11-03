@@ -1,0 +1,125 @@
+body
+{
+	background-color:#232323;
+}
+.container
+{
+	display:grid;
+	grid-gap:1em;
+	grid-template-columns: 28% 70%;
+	background-color:#232323;
+	margin-top: 6%;
+	
+	
+}
+.nesteddiv
+{
+	display:grid;
+	grid-template-rows: repeat(1,1fr);
+	grid-gap:1em;
+	align-items:center;
+	background-color: #353535;
+	border-radius: 7%;
+	
+	
+}
+.nesteddiv > div
+{
+	padding: 1em;
+}
+
+.Controlpanel-buttons
+{
+	display:grid;
+	margin-left:5%;
+	margin-bottom:5%;
+	width:89%;
+	height:65%;
+	float:left;
+	text-align:center;
+	font-size: 10%;	
+}
+.imgControlpanel
+{
+	padding:5%;
+	border-radius:60%;
+	margin:0 auto;
+	width:70%;
+	height:100%;
+	position:relative;
+	right: -10%;
+}
+.textpic
+{
+	margin-top:-2%;
+	text-align:center;
+	font-weight: bold;
+	font-size:1vw;
+	color:white;
+}
+
+.txtboxchoice
+{
+	text-align:center;
+	font-size:1vw;
+	font-family:Arial;
+}
+.buttonstxt
+{
+	font-size:0.8vw;
+	font-family:Arial;
+}
+.boxwithchoice 
+{ 	 	 	 
+	 background-color:#2b2b2b; 
+	 border-radius:12%; 
+	 grid-auto-rows:minmax(100px, auto);
+	 color:white;
+} 
+
+@media only screen and (max-width: 480px)
+{
+	.container
+	{		
+		grid-template-columns: 100%;
+	}
+	.boxwithchoice
+	{
+		width: 100%;
+	}
+	.grid-controlpanel
+	{
+		width:100%;
+	}
+	.Controlpanel-buttons
+	{
+		
+	}
+}
+@media only screen and (max-width: 800px)
+{
+	.container
+	{		
+		grid-template-columns: 100%;
+	}
+	.boxwithchoice
+	{
+		width: 100%;
+	}
+	.grid-controlpanel
+	{
+		width:100%;
+	}
+	.Controlpanel-buttons
+	{
+		
+	}
+}
+
+
+
+
+
+
+
+
