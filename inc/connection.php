@@ -1,5 +1,5 @@
 <?php
-	$db = new PDO("sqlite:C:\wamp64\www\Projekt\db/databas.db"); 
+	$db = new PDO("sqlite::.\db/databas.db"); 
 	$db1 = new SQLite3('db/databas.db');
 	$db1->busyTimeout(5000);
     // WAL mode has better control over concurrency.
